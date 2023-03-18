@@ -26,6 +26,9 @@ public class Pizza {
             price = 400;
             toppingsPrice = 120;
         }
+
+        bill = "Base Price Of The Pizza: " + price + "\n";
+
         cheesePrice = 80;
         packingBagPrice = 20;
         totalPrice = price;
@@ -34,13 +37,10 @@ public class Pizza {
         isExtraToppings = false;
         isPaperBag = false;
         isBillGenerated = false;
-
-        bill = "Base Price Of The Pizza: " + price + "\n";
     }
 
     public int getPrice(){
-
-        return this.price;
+        return totalPrice;
     }
 
     public void addExtraCheese(){
